@@ -55,7 +55,7 @@ Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
 
 **Network Connectivity**
 
-The kernel provided with the Jessie installer doesn't play nice with the wifi card, so you will need to secure either a USB to RJ45 dongle, or another dongle that plugs into the proprietary connection on the left side of the laptop, for network installation and updates.
+The kernel provided with the Jessie installer doesn't play nice with the wifi card, so you will need to secure either a USB to RJ45 dongle, or another dongle that uses the proprietary connection on the left side of the laptop, for network installation and updates.
 
 **Resizing Windows Pro 64 bit**
 

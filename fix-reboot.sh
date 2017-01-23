@@ -33,7 +33,8 @@ else
 		exit
 	fi
 
-	# Here we'll reset the boot order as well
+	# Here we'll try to reset the boot order as well. It might work
+	# one of these days.
 
 	efibootmgr -O
 	efibootmgr -o $DEB,$ORDER

@@ -21,6 +21,9 @@ then
 	exit
 else
 
+	# If we got here, the efibootmgr is broken still, so we'll set
+	# the "BootNext" variable which does survive a reboot.
+
 	# Check if BootNext is set and bail, or set it
 
 	if [ "$NEXT" != "$DEB" ];

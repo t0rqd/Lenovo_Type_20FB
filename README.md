@@ -43,12 +43,34 @@ $ lspci
 
 
 ```
-$ lsusb
+$ sudo lsusb -v | grep -E '\<(Bus|iProduct|bDeviceClass|bDeviceProtocol)' 2>/dev/null
 Bus 002 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub
+  bDeviceClass            9 Hub
+  bDeviceProtocol         3 
+  iProduct                2 xHCI Host Controller
 Bus 001 Device 004: ID 138a:0090 Validity Sensors, Inc. 
+  bDeviceClass          255 Vendor Specific Class
+  bDeviceProtocol       255 
+  iProduct                0 
+      (Bus Powered)
+  (Bus Powered)
 Bus 001 Device 003: ID 13d3:5248 IMC Networks 
+  bDeviceClass          239 Miscellaneous Device
+  bDeviceProtocol         1 Interface Association
+  iProduct                1 Integrated Camera
+      (Bus Powered)
+  bDeviceClass          239 Miscellaneous Device
+  bDeviceProtocol         1 Interface Association
+  (Bus Powered)
 Bus 001 Device 002: ID 8087:0a2b Intel Corp. 
+  bDeviceClass          224 Wireless
+  bDeviceProtocol         1 Bluetooth
+  iProduct                0 
 Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+  bDeviceClass            9 Hub
+  bDeviceProtocol         1 Single TT
+  iProduct                2 xHCI Host Controller
+
 ```
 
 ## Issues Encountered

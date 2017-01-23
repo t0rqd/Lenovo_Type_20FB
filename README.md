@@ -1,0 +1,1 @@
+# Lenovo_Type_20FB

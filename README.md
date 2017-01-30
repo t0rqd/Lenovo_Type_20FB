@@ -9,6 +9,7 @@ https://wiki.debian.org/InstallingDebianOn/Thinkpad/X1%20Carbon%204thGen%20PCIe_
 
 **Debian Version:**  
 Stretch (9.0)
+XFCE Desktop
 
 Initially, I started working with Jessie (8.7) with backports based on information from the referenced link above. While this did work initially, I found that there were miscellaneous things that I wanted to upgrade from 'stable' and to hopefully resolve issues with the EFI boot loader not properly saving the boot order changes.
 
@@ -167,5 +168,11 @@ To make this run every reboot, I opted to dump a line in ```/etc/rc.local``` to 
 The alternative to using ```/etc/rc.local``` would be to make an entry in the root crontab to execute the script on reboot with the time of ```@reboot```. The choice is yours.
 
 Ultimately, it would be nice to have ```efibootmgr``` for Debian be updated so that it works with this hardware, but I haven't had the time or patience to chase it down and file an appropriate bug report.
+
+## Suspend and Hibernate
+
+With stock install, closing the lid firmly enables suspend sleep state S3. No configurations were done for this.
+
+Hibernation, when selected from the "Log Out" options panel sends system into sleep state S4 without special configuration required.
 
 

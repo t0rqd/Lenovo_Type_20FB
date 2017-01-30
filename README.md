@@ -169,7 +169,9 @@ The alternative to using ```/etc/rc.local``` would be to make an entry in the ro
 
 Ultimately, it would be nice to have ```efibootmgr``` for Debian be updated so that it works with this hardware, but I haven't had the time or patience to chase it down and file an appropriate bug report.
 
-## Suspend and Hibernate
+## System Settings and Features
+
+** Suspend and Hibernate **
 
 With stock install, closing the lid firmly enables suspend sleep state S3. No configurations were done for this.
 

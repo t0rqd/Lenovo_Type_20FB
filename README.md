@@ -171,10 +171,10 @@ Ultimately, it would be nice to have ```efibootmgr``` for Debian be updated so t
 
 ## System Settings and Features
 
-** Suspend and Hibernate **
+**Suspend and Hibernate**
 
 With stock install, closing the lid firmly enables suspend sleep state S3. No configurations were done for this.
 
-Hibernation, when selected from the "Log Out" options panel sends system into sleep state S4 without special configuration required.
+Hibernation, when selected from the "Log Out" options panel sends system into sleep state S4. No configurations were done for this. Wake process goes through boot sequence and permits use of disk encryption that I have configured.
 
 
